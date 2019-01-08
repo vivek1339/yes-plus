@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">yes-plus</string>
+
+
+    <string name="text_1">A powerful life-skills program, that charges the youth with a fresh breath of vigor, enthusiasm, excellence and responsibility. YES!+ enables you to absorb the freshness, the repose and all the positivity around you, and helps you discharge stress, inhibitions, bad habits, and barriers.
+        </string>
+<string name="title">Youth Empowerment and Skills workshop </string>
+    <string name="text_2">
+
+YES!+ is a brilliant mix of antiquity and the contemporary. It is a smooth blend of ancient wisdom, yoga, pranayama (breath control), and meditation, fused with contemporary intellectual exchanges, music and games. And of-course it includes Sri Sri Ravi Shankar\'s powerful and famous breathing technique, the Sudarshan Kriya.
+        </string>
+    <string name="text_3">
+
+Unleash the leader inside you, live your unbounded potential, showcase your exuberant personality, contribute your greatness to the planet, discover your true self.</string>
+<string name="tilte_3">About AOL</string>
+    <string name="tilte_4">ART OF LIVING</string>
+    <string name="text_4">The Art of Living Foundation is a volunteer-based, humanitarian and educational non-governmental organization (NGO). It was founded in 1981 by Ravi Shankar.The Art of Living Foundation has centers in more than 156 countries.Art of Living offers several stress-elimination and self-development programs based on breathing techniques, meditation and yoga.</string>
+<string name="text_5">Art of Living offers several stress-elimination and self-development programs based on the breathing technique Sudarshan Kriya, meditation and yoga. This technique is a major part of Art of Living courses, which are conducted by instructors, most of whom do voluntary work. These courses have also been conducted for students and faculty, government officials, firemen, ex-militants, and prisoners.</string>
+<string name="title_5">Programmes and courses</string>
+    <string name="title_6">Social service</string>
+    <string name="text_6">Project Vidarbha</string>
+    <string name="text_7">                     Sri Sri University</string>
+    <string name="text_8">                Mission Green Earth</string>
+    <string name="text_9">              River Rejuvenation Projects</string>
+    <string name="text_10">            Volunteer For a Better India</string>
 </resources>
