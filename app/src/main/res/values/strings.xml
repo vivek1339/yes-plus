@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">yes-plus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
     <string name="text_1">A powerful life-skills program, that charges the youth with a fresh breath of vigor, enthusiasm, excellence and responsibility. YES!+ enables you to absorb the freshness, the repose and all the positivity around you, and helps you discharge stress, inhibitions, bad habits, and barriers.
