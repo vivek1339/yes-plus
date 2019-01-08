@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "863742693050",
+    "firebase_url": "https://yes-plus-3af10.firebaseio.com",
+    "project_id": "yes-plus-3af10",
+    "storage_bucket": "yes-plus-3af10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863742693050:android:160eefb488c3f6b0",
+        "android_client_info": {
+          "package_name": "com.club.yes_plus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863742693050-fonk95pv2ri1jo95r5rk7nukko1uaj4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.club.yes_plus",
+            "certificate_hash": "516ba2575869e7828b02f92860e8f9436fbb7356"
+          }
+        },
+        {
+          "client_id": "863742693050-52c2mllrsh8jjrj9cmfe04577pf34qoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtNb6pp4XUrE95CNuOrEJB0Z6EK_2DGDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863742693050-52c2mllrsh8jjrj9cmfe04577pf34qoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

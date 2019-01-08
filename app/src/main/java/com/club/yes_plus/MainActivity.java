@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         About_Us=(Button)findViewById(R.id.About_Us);
         Kriya= (Button)findViewById(R.id.Kriya);
         News_Feed=(Button)findViewById(R.id.News_Feed);
@@ -42,5 +41,6 @@ About_Us.setOnClickListener(    new View.OnClickListener() {
         startActivity(about);
     }
 });
+
     }
 }
