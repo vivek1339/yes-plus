@@ -1,166 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.club.yes_plus.Member">
-
-    <ScrollView
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <include
+        layout="@layout/app_bar_member"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/sec"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="188dp"
-                android:text="SECRETARY"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/gen_sec"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="8dp"
-                android:text="GENERAL SECRETARY"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/image_v"
-                android:layout_width="106dp"
-                android:layout_height="108dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="55dp"
-                android:src="@drawable/vivek_2" />
-
-            <TextView
-                android:id="@+id/vivek"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="62dp"
-                android:layout_marginEnd="44dp"
-                android:text="Vivek Kuchibhatla"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                android:textStyle="italic" />
-
-            <ImageView
-                android:id="@+id/sec_1"
-                android:layout_width="106dp"
-                android:layout_height="108dp"
+        android:layout_height="match_parent" />
 
 
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="240dp"
-                android:layout_marginBottom="0dp"
-                android:src="@drawable/ihit" />
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        app:itemTextColor="@color/colorPrimaryDark" />
 
-            <TextView
-                android:id="@+id/ihit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/vivek"
-                android:layout_alignTop="@+id/sec_1"
-                android:layout_marginStart="4dp"
-                android:text="Ihit Shukla"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/sec_2"
-                android:layout_width="106dp"
-                android:layout_height="108dp"
 
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="380dp"
-                android:layout_marginBottom="0dp"
-                android:src="@drawable/satish" />
-
-            <TextView
-                android:id="@+id/satish"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/vivek"
-                android:layout_alignTop="@+id/sec_2"
-                android:text="Satish"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/vivek"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="3dp"
-                android:layout_marginTop="102dp"
-                android:text="CSE , BIT"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="280dp"
-                android:layout_marginEnd="4dp"
-                android:text="ME , BIT"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="422dp"
-                android:layout_marginEnd="10dp"
-                android:text="ME , BIT"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-    </ScrollView>
-
-</android.widget.LinearLayout>
+</android.support.v4.widget.DrawerLayout>
