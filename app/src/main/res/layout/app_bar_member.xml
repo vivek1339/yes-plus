@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/vivek"
                 android:layout_alignTop="@+id/sec_2"
-                android:text="Satish"
+                android:text="Satish Gosu"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
                 android:textStyle="italic" />
