@@ -7,25 +7,30 @@
         <item
             android:id="@+id/home"
 
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
         <item
             android:id="@+id/Events"
 
+            android:icon="@drawable/ic_event"
             android:title="Events" />
         <item
             android:id="@+id/Projects"
 
+            android:icon="@drawable/ic_project"
             android:title="Projects" />
         <item
             android:id="@+id/Follow_up"
-            android:title="Follow up"
-            />
-        <item android:id="@+id/Members"
-            android:title="Members"
-            />
-        <item android:id="@+id/About_us"
-            android:title="About_us"
-            />
+            android:icon="@drawable/ic_follow_up"
+            android:title="Follow up" />
+        <item
+            android:id="@+id/Members"
+            android:icon="@drawable/ic_members"
+            android:title="Members" />
+        <item
+            android:id="@+id/About_us"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="About_us" />
     </group>
 
 
