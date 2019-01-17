@@ -48,7 +48,7 @@ public class about_us extends AppCompatActivity {
                             //startActivity(intent);
                         }
                         else if(id == R.id.Members) {
-                            Intent intent=new Intent(about_us.this,about_us.class);
+                            Intent intent=new Intent(about_us.this,Member.class);
                             startActivity(intent);
                             // In future to make the complete application only on one activity
                             //setContentView(R.layout.activity_about_us);
