@@ -15,12 +15,21 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity  {
     private DrawerLayout mDrawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FirebaseAuth mauth=FirebaseAuth.getInstance();
+        if(mauth.getCurrentUser()==null)
+        {
+            Intent i=new Intent(this,Login_Activity.class);
+            startActivity(i);
+        }
         mDrawerLayout = findViewById(R.id.drawer_layout);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -71,6 +80,12 @@ public class MainActivity extends AppCompatActivity  {
                         return true;
                     }
                 });
+    }
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
     }
 
 }
