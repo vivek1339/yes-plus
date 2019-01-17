@@ -10,12 +10,19 @@ public class user_reg {
     String username;
 
     String userkey;
+
+
+
+    boolean isadmin;
 public user_reg(String username,String userkey)
 {
     this.username=username;
     this.userkey=userkey;
+    isadmin=false;
 }
-public user_reg(){}
+public user_reg(){
+    isadmin=false;
+}
     public String getUsername() {
         return username;
     }
@@ -30,6 +37,13 @@ public user_reg(){}
 
     public void setUserkey(String userkey) {
         this.userkey = userkey;
+    }
+    public boolean isIsadmin() {
+        return isadmin;
+    }
+
+    public void setIsadmin(boolean isadmin) {
+        this.isadmin = isadmin;
     }
 
 }
