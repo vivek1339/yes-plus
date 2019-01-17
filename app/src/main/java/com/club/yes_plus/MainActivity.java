@@ -15,16 +15,24 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity  {
     private DrawerLayout mDrawerLayout;
+    FirebaseAuth mauth;
+    boolean isadmin1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FirebaseAuth mauth=FirebaseAuth.getInstance();
+        mauth=FirebaseAuth.getInstance();
         if(mauth.getCurrentUser()==null)
         {
             Intent i=new Intent(this,Login_Activity.class);
@@ -75,11 +83,40 @@ public class MainActivity extends AppCompatActivity  {
                             //Intent intent=new Intent(MainActivity.this,followup.class);
                             //startActivity(intent);
                         }
+                        else if(id==R.id.create_key) {
+                            if (isadmin1){
+                                Intent intent = new Intent(MainActivity.this, create_key.class);
+                                startActivity(intent);
+                            }
+                            else
+                                Toast.makeText(MainActivity.this,"Only for Admins",Toast.LENGTH_LONG).show();
+                        }
                         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                         drawer.closeDrawer(GravityCompat.START);
                         return true;
                     }
                 });
+    }
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        isadmin1 = false;
+        DatabaseReference db = FirebaseDatabase.getInstance().getReference().child("Users").child(mauth.getCurrentUser().getDisplayName());
+        db.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                user_reg u1=dataSnapshot.getValue(user_reg.class);
+                isadmin1=u1.isadmin;
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
     @Override
     protected void onDestroy()
